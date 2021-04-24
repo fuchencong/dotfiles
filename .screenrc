@@ -1,0 +1,27 @@
+# Copyright (C) fuchencong.com
+
+# Don't display the copyright page
+# default: on
+startup_message off
+
+# Change default scrollback value for new windows
+# default: 100
+defscrollback 10000
+
+# Encoding
+defencoding utf8
+encoding utf8 utf8
+defutf8 on
+
+# Set shell
+shell -$SHELL
+
+# Set hardstatus
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+
+# Enable 256 color term
+term xterm-256color
+
+# Enable scroll
+termcapinfo xterm* ti@:te@
