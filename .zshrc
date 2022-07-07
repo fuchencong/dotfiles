@@ -100,7 +100,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Source local bash configuration
 if [ -f $HOME/.bashrc ]; then
+<<<<<<< HEAD
     source $HOME/.bashrc
+=======
+    echo "file exist"
+>>>>>>> 6daeb5cda0a98b6cb39bec54dab017a855f991f0
 fi
 
 
