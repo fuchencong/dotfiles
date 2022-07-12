@@ -68,7 +68,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode zsh-autosuggestions zsh-syntax-highlighting vi-mode colored-man-pages)
+plugins=(z git vi-mode colored-man-pages vscode zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,11 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Source local bash configuration
 if [ -f $HOME/.bashrc ]; then
-<<<<<<< HEAD
     source $HOME/.bashrc
-=======
-    echo "file exist"
->>>>>>> 6daeb5cda0a98b6cb39bec54dab017a855f991f0
 fi
 
 
