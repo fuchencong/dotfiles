@@ -119,6 +119,8 @@ return packer.startup(function(use)
   use { "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" }
   -- Portable package manager for Neovim that runs everywhere Neovim runs.
   use { "williamboman/mason.nvim", commit = "8de637a2b02a7a996d52b4f817e8c9193943e914" }
+  -- A tree like view for symbols in Neovim using the Language Server Protocol.
+  use { "simrat39/symbols-outline.nvim" }
 
   -- Treesitter
   use {
@@ -138,6 +140,8 @@ return packer.startup(function(use)
   -- use { "rcarriga/nvim-dap-ui", commit = "d76d6594374fb54abf2d94d6a320f3fd6e9bb2f7" }
   -- use { "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" }
 
+  -- A smooth scrolling neovim plugin written in lua
+  use { "karb94/neoscroll.nvim" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

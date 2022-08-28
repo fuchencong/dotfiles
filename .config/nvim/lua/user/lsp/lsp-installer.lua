@@ -7,6 +7,7 @@ local servers = {
   "clangd",
   "pyright",
   "gopls",
+  "bashls",
 }
 
 lsp_installer.setup()

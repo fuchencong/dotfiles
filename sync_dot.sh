@@ -4,13 +4,17 @@
 
 
 function pack_nvim() {
+    [ -d ./.config/nvim/lua/ ] || mkdir -p ./.config/nvim/lua/
+
     cp ~/.config/nvim/init.lua  ./.config/nvim/
-    cp -rf ~/.config/nvim/lua/  ./.config/nvim/
+    cp -rf ~/.config/nvim/lua/user  ./.config/nvim/lua/
 }
 
 function install_nvim() {
+    [ -d ~/.config/nvim/lua/ ] || mkdir -p ~/.config/nvim/lua/
+
     cp ./.config/nvim/init.lua   ~/.config/nvim/init.lua 
-    cp -rf ./.config/nvim/lua/   ~/.config/nvim/
+    cp -rf ./.config/nvim/lua/user   ~/.config/nvim/lua/
 }
 
 function pack() {
