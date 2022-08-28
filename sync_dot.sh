@@ -9,8 +9,8 @@ function pack_nvim() {
 }
 
 function install_nvim() {
-    cp ./config/nvim/init.lua   ~/.config/nvim/init.lua 
-    cp -rf ./config/nvim/lua/   ~/.config/nvim/
+    cp ./.config/nvim/init.lua   ~/.config/nvim/init.lua 
+    cp -rf ./.config/nvim/lua/   ~/.config/nvim/
 }
 
 function pack() {
